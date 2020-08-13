@@ -1,4 +1,4 @@
-FROM php:7.0.33-fpm
+FROM php:5.6.40-fpm
 
 COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/bin/
 
