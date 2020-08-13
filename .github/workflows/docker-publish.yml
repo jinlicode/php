@@ -32,4 +32,4 @@ jobs:
           --platform=linux/amd64 \
           --output "type=image,push=true" \
           --file ./Dockerfile . \
-          --tag jinlicode/jinlicode/php-security:latest
+          --tag jinlicode/php-security:latest
