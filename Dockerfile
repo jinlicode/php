@@ -64,15 +64,3 @@ RUN install-php-extensions gd  \
     xmlrpc \
     zip \
     sockets
-RUN    cd /tmp \
-    && curl -O https://packages.baidu.com/app/openrasp/release/1.3.4/rasp-php-linux.tar.bz2 \
-    && tar -jxvf rasp-php-linux.tar.bz2 \
-    && cd /tmp/rasp-php-2020-07-07 \
-    && php install.php -d /opt/rasp \
-    && rm -rf /tmp/* \
-    && rm -rf /opt/rasp/plugins/official.js \
-    && rm -rf /opt/rasp/conf/openrasp.yml \
-    && cd /opt/rasp/conf/ \
-    && curl -O https://raw.githubusercontent.com/jinlicode/SecurityRule/master/openrasp.yml \
-    && cd /opt/rasp/plugins/ \
-    && curl -O https://raw.githubusercontent.com/jinlicode/SecurityRule/master/plugin.js
